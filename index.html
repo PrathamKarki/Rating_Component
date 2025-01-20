@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="card">
+  <div class="card_container">
+    <span class="rating">
+        <img src="./images/icon-star.svg" alt="star-icon" class="star-icon">
+    </span>
+    <h2 class="title">How did we do?</h2>
+    <p class="description"> 
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+  <div class="rating-numbers">
+    <ul class="list-items">
+      <li class="rate_list" id="1-rating">1</li>
+      <li class="rate_list" id="2-rating">2</li>
+      <li class="rate_list" id="3-rating">3</li>
+      <li class="rate_list" id="4-rating">4</li>
+      <li class="rate_list" id="5-rating">5</li>
+    </ul>
+  </div>
+
+  <button class="btn">Submit</button>
+</div>
+</div>
+
+<div class="thank_you_section">
+  <div class="thankyou-img">
+    <img src="./images/illustration-thank-you.svg" alt="thank you img">
+  </div>
+  <p id="dynamic-text">You selected<span class="dynamic-number"></span>out of 5</p>
+  <h2 class="thankyou-heading">Thank you!</h2>
+  <p class="thankyou_text">
+    We appreciate you taking the time to give a rating. If you ever need more support, 
+    don't hesitate to get in touch!
+  </p>
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pratham Karki</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
